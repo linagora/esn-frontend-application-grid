@@ -6,6 +6,18 @@
  */
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
+  interface EsnAppGrid {
+    /**
+     * A serialized JSON object that contains information about the available apps.
+     */
+    serializedItems: string;
+  }
+  interface EsnPopover {
+    /**
+     * A method to toggle the popover on/off.
+     */
+    toggleShowState: () => Promise<void>;
+  }
   interface MyComponent {
     /**
      * The first name
@@ -22,16 +34,35 @@ export namespace Components {
   }
 }
 declare global {
+  interface HTMLEsnAppGridElement extends Components.EsnAppGrid, HTMLStencilElement {}
+  var HTMLEsnAppGridElement: {
+    prototype: HTMLEsnAppGridElement;
+    new (): HTMLEsnAppGridElement;
+  };
+  interface HTMLEsnPopoverElement extends Components.EsnPopover, HTMLStencilElement {}
+  var HTMLEsnPopoverElement: {
+    prototype: HTMLEsnPopoverElement;
+    new (): HTMLEsnPopoverElement;
+  };
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'esn-app-grid': HTMLEsnAppGridElement;
+    'esn-popover': HTMLEsnPopoverElement;
     'my-component': HTMLMyComponentElement;
   }
 }
 declare namespace LocalJSX {
+  interface EsnAppGrid {
+    /**
+     * A serialized JSON object that contains information about the available apps.
+     */
+    serializedItems?: string;
+  }
+  interface EsnPopover {}
   interface MyComponent {
     /**
      * The first name
@@ -47,6 +78,8 @@ declare namespace LocalJSX {
     middle?: string;
   }
   interface IntrinsicElements {
+    'esn-app-grid': EsnAppGrid;
+    'esn-popover': EsnPopover;
     'my-component': MyComponent;
   }
 }
@@ -54,6 +87,8 @@ export { LocalJSX as JSX };
 declare module '@stencil/core' {
   export namespace JSX {
     interface IntrinsicElements {
+      'esn-app-grid': LocalJSX.EsnAppGrid & JSXBase.HTMLAttributes<HTMLEsnAppGridElement>;
+      'esn-popover': LocalJSX.EsnPopover & JSXBase.HTMLAttributes<HTMLEsnPopoverElement>;
       'my-component': LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
     }
   }

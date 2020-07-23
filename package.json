@@ -1,7 +1,7 @@
 {
   "name": "esn-web-components",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "This is a project for building a standalone Web Component using Stencil that is used within OpenPaaS, LinShare, and Twake.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
+    "build:watch": "stencil build --watch --serve",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",
+    "@stencil/sass": "^1.3.2",
     "@types/jest": "24.9.1",
     "@types/puppeteer": "2.0.1",
     "jest": "24.9.0",
@@ -30,5 +32,7 @@
     "puppeteer": "2.1.1"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "@popperjs/core": "^2.4.4"
+  }
 }

@@ -1,0 +1,129 @@
+@import '../../styles/global-vars';
+
+:host {
+  display: flex;
+  position: relative;
+
+  color: inherit;
+}
+
+.esn-app-grid {
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  color: inherit;
+}
+
+.esn-app-grid__app-icon {
+  width: 65px;
+  height: 65px;
+}
+
+.esn-app-grid__popover-content {
+  display: flex;
+  max-width: 300px;
+  margin-top: 0;
+  z-index: 20001;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: inherit;
+}
+
+.esn-app-grid__toggler {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+
+  z-index: 20003;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: inherit;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
+
+.esn-app-grid__app-item {
+  min-width: 33.33333333%;
+  height: 90px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  > a {
+    text-decoration: none;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4c4c4c;
+  }
+}
+
+:host div > a:hover {
+  color: #262626;
+}
+
+:host div > a:hover .label {
+  color: #262626;
+}
+
+:host div > a .label {
+  color: #4c4c4c;
+  font-size: 100%;
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  outline: none;
+  font-weight: 500;
+}
+
+.app-menu-icon-primary-color {
+  fill: $primaryColor !important; /* override svg default color */
+  stroke: $primaryColor !important; /* override svg default color */
+}
+
+.app-menu-icon-primary-color-without-stroke {
+  fill: $primaryColor !important; /* override svg default color */
+}
+
+.app-menu-icon-accent-color {
+  fill: $accentColor !important; /* override svg default color */
+  stroke: $accentColor !important; /* override svg default color */
+}
+
+@media (min-width: 768px) {
+  .esn-app-grid__popover-content {
+    max-width: 350px;
+  }
+}
