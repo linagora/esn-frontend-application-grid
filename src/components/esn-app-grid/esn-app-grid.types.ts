@@ -1,11 +1,6 @@
-export interface Item {
+export interface Application {
   name: string;
-  iconUrl: string;
-  url: string;
-}
-
-export interface InternalItem {
-  name: string;
+  iconUrl?: string;
   iconContent?: string;
   url: string;
 }

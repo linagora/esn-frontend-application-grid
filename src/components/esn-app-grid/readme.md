@@ -5,9 +5,9 @@
 
 ## Properties
 
-| Property          | Attribute          | Description                                                                  | Type     | Default     |
-| ----------------- | ------------------ | ---------------------------------------------------------------------------- | -------- | ----------- |
-| `serializedItems` | `serialized-items` | A serialized JSON object that contains information about the available apps. | `string` | `undefined` |
+| Property                 | Attribute                 | Description                                                                  | Type     | Default     |
+| ------------------------ | ------------------------- | ---------------------------------------------------------------------------- | -------- | ----------- |
+| `serializedApplications` | `serialized-applications` | A serialized JSON object that contains information about the available apps. | `string` | `undefined` |
 
 
 ## Dependencies
