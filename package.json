@@ -1,0 +1,39 @@
+{
+  "name": "esn-frontend-application-grid",
+  "version": "0.0.1",
+  "description": "This is a project for building the application grid as a standalone Web Component using Stencil that is used within OpenPaaS, LinShare, and Twake.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/esn-frontend-application-grid/esn-frontend-application-grid.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "build:watch": "stencil build --watch --serve",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "postinstall": "stencil build"
+  },
+  "devDependencies": {
+    "@stencil/core": "1.12.2",
+    "@stencil/sass": "1.3.2",
+    "@types/jest": "24.9.1",
+    "@types/puppeteer": "2.0.1",
+    "jest": "24.9.0",
+    "jest-cli": "24.9.0",
+    "puppeteer": "2.1.1"
+  },
+  "license": "AGPLv3",
+  "dependencies": {
+    "@popperjs/core": "2.4.4"
+  }
+}
