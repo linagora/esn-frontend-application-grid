@@ -1,6 +1,7 @@
 dist/
 www/
 loader/
+package-lock.json
 
 *~
 *.sw[mnpcod]
@@ -16,6 +17,7 @@ log.txt
 .idea/
 .sass-cache/
 .versions/
+.vscode/
 node_modules/
 $RECYCLE.BIN/
 

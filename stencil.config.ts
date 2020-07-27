@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'esn-web-components',
+  namespace: 'esn-frontend-application-grid',
   taskQueue: 'async',
   plugins: [sass()],
   outputTargets: [
