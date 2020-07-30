@@ -2,6 +2,7 @@ import { Component, Prop, ComponentInterface, State, Host, h } from '@stencil/co
 import { Application } from './esn-app-grid.types';
 import { AppGridTogglerIcon } from '../../icons/AppGridIcon';
 import { getAppIcon } from '../../utils/app-icons';
+import { isParentPathnameOf } from '../../utils/pathname';
 
 @Component({
   tag: 'esn-app-grid',
@@ -57,7 +58,7 @@ export class EsnAppGrid implements ComponentInterface {
 
                 return (
                   <div class="esn-app-grid__app-item">
-                    <a href={url}>
+                    <a href={url} target={isParentPathnameOf(url, window.location.href) ? '_self' : '_blank'}>
                       <div class="esn-app-grid__app-icon">
                         <IconComponent />
                       </div>
