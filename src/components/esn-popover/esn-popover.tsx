@@ -22,7 +22,12 @@ export class EsnPopover implements ComponentInterface {
   componentDidLoad() {
     createPopper(this.hostEl, this.popoverContainerEl, {
       strategy: 'fixed',
-      modifiers: [flip, preventOverflow]
+      modifiers: [flip, preventOverflow, {
+        name: 'preventOverflow',
+        options: {
+          padding: 8
+        }
+      }]
     });
 
     this.popoverContainerEl.addEventListener('animationstart', function (e: AnimationEvent) {
