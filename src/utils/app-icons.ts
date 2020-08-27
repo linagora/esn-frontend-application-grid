@@ -4,13 +4,15 @@ import { ContactsAppIcon } from '../icons/ContactsAppIcon';
 import { InboxAppIcon } from '../icons/InboxAppIcon';
 import { LinShareAppIcon } from '../icons/LinShareAppIcon';
 import { UnknownAppIcon } from '../icons/UnknownAppIcon';
+import { TwakeAppIcon } from '../icons/TwakeAppIcon';
 
 const iconMapping = {
   Admin: AdminAppIcon,
   Calendar: CalendarAppIcon,
   Contacts: ContactsAppIcon,
   Inbox: InboxAppIcon,
-  LinShare: LinShareAppIcon
+  LinShare: LinShareAppIcon,
+  Twake: TwakeAppIcon
 };
 
 export const getAppIcon = (appName: string) => {
