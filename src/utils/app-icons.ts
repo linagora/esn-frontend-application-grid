@@ -5,6 +5,7 @@ import { InboxAppIcon } from '../icons/InboxAppIcon';
 import { LinShareAppIcon } from '../icons/LinShareAppIcon';
 import { UnknownAppIcon } from '../icons/UnknownAppIcon';
 import { TwakeAppIcon } from '../icons/TwakeAppIcon';
+import { TmailAppIcon } from '../icons/TmailAppIcon';
 
 const iconMapping = {
   Admin: AdminAppIcon,
@@ -12,7 +13,8 @@ const iconMapping = {
   Contacts: ContactsAppIcon,
   Inbox: InboxAppIcon,
   LinShare: LinShareAppIcon,
-  Twake: TwakeAppIcon
+  Twake: TwakeAppIcon,
+  Tmail: TmailAppIcon
 };
 
 export const getAppIcon = (appName: string) => {
