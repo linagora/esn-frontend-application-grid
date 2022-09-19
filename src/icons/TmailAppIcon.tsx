@@ -2,8 +2,8 @@ import { FunctionalComponent, h } from '@stencil/core';
 
 export const TmailAppIcon: FunctionalComponent = () => (
   <img
-    width="100%"
-    height="100%"
+    width="65"
+    height="65"
     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9
   kT1Iw0AcxV9bpSqVDnZQEcxQnSyIijhqFYpQIdQKrTqYXPoFTRqSFBdHwbXg4Mdi1cHFWVcHV0EQ
   /ABxdHJSdJES/5cUWsR4cNyPd/ced+8Af73MVLNjHFA1y0gl4kImuyoEX9GNMEIYxoDETH1OFJPw
