@@ -14,7 +14,7 @@ const iconMapping = {
   Inbox: InboxAppIcon,
   LinShare: LinShareAppIcon,
   Twake: TwakeAppIcon,
-  Tmail: TmailAppIcon
+  TMail: TmailAppIcon
 };
 
 export const getAppIcon = (appName: string) => {
