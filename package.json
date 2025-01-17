@@ -21,8 +21,7 @@
     "build": "stencil build --docs",
     "build:watch": "stencil build --watch --serve",
     "start": "stencil build --dev --watch --serve",
-    "generate": "stencil generate",
-    "postinstall": "stencil build"
+    "generate": "stencil generate"
   },
   "license": "AGPLv3",
   "dependencies": {

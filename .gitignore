@@ -1,7 +1,4 @@
-dist/
 www/
-loader/
-package-lock.json
 
 *~
 *.sw[mnpcod]

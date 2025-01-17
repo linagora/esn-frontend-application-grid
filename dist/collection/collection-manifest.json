@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "./components/esn-app-grid/esn-app-grid.js",
+    "./components/esn-popover/esn-popover.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.12.2",
+    "typescriptVersion": "3.8.3"
+  },
+  "collections": [],
+  "bundles": []
+}
